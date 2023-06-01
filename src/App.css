@@ -1,0 +1,247 @@
+:root {
+  --PrimaryText: rgba(114, 46, 209, 1);
+  --Black: #000000;
+  --White: #ffffff;
+  --PrimaryBG: #f7f1ff;
+  --bs-primary-rgb: 114, 46, 209;
+  --contact:rgba(251, 252, 255, 1);
+  --textsub:rgba(137, 137, 162, 1);
+}
+.btn{
+  --bs-btn-font-size: 1.2rem;
+}
+.color-textsub{
+  color: var(--textsub);
+}
+@font-face {
+  font-family: 'metropolis';
+  src: url(asset/TrueType/Metropolis-Medium.ttf);
+}
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'metropolis';
+}
+html{
+   font-size: 14px;
+}
+.contact{
+  background: var(--contact);
+  height: 50vh;
+}
+.headbg {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-height: 100vh;
+  background: linear-gradient(180deg, #ffffff 0%, #e2f1ff 100%);
+}
+.headbg::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 100vw solid transparent; /* ปรับขนาดตามที่ต้องการ */
+  border-right: 0px solid transparent; /* ปรับขนาดตามที่ต้องการ */
+  border-bottom: 150px solid var(--White); /* สีเหลียมสามเหลี่ยม */
+}
+
+.bg-love {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-height: 100vh;
+  background: linear-gradient(
+    175.54deg,
+    rgba(249, 240, 255, 0.47) 25.81%,
+    rgba(226, 241, 255, 0.47) 96.38%
+  );
+}
+
+.bg-love::after {
+  content: "";
+  position: relative;
+  bottom: calc(100vh - 150px);
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent; /* ปรับขนาดตามที่ต้องการ */
+  border-right: 100vw solid transparent; /* ปรับขนาดตามที่ต้องการ */
+  border-top: 150px solid var(--White); /* สีเหลียมสามเหลี่ยม */
+}
+.bg-love::before {
+  content: "";
+  position: relative;
+  bottom: calc(-100vh + 150px);
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 100vw solid transparent; /* ปรับขนาดตามที่ต้องการ */
+  border-right: 0px solid transparent; /* ปรับขนาดตามที่ต้องการ */
+  border-bottom: 150px solid var(--White); /* สีเหลียมสามเหลี่ยม */
+}
+.o05 {
+  opacity: 0.5;
+}
+.bar,
+.m-16 {
+  margin-left: 16.66%;
+  margin-right: 16.66%;
+}
+.ml-16 {
+  margin-left: 16.66%;
+}
+.mr-16 {
+  margin-right: 16.66%;
+}
+
+
+
+a.nav-link,
+a.nav-link:hover,
+a.nav-link:focus,
+a.nav-link:visited {
+  color: #000;
+}
+a.nav-link.btn,
+a.nav-link.btn:hover,
+a.nav-link.btn:focus {
+  color: var(--PrimaryText);
+  border: var(--PrimaryText) 1px solid;
+  border-radius: 23px;
+  background: var(--White);
+}
+.nore{
+  border-radius: 5px !important;
+}
+.btn.btn-PrimaryTextBG,
+.btn.btn-PrimaryTextBG:hover {
+  color: var(--PrimaryText);
+  border: none;
+  background: var(--PrimaryBG);
+  border-radius: 23px;
+}
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 12px;
+}
+.btn.btn-PrimaryBG,
+.btn.btn-PrimaryBG:hover {
+  color: var(--PrimaryBG);
+  border: none;
+  background: var(--PrimaryText);
+  border-radius: 23px;
+}
+.btn.btn-PrimaryText,
+.btn.btn-PrimaryText:hover {
+  color: var(--PrimaryText);
+  border: none;
+  background: var(--White);
+  border-radius: 23px;
+}
+.bgw {
+  background: var(--White);
+  min-height: 100vh;
+  margin-top: 112px;
+}
+.mt112 {
+  margin-top: 112px;
+}
+.mb112 {
+  margin-bottom: 112px;
+}
+.tes {
+  margin: auto;
+}
+.objcenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-icon{
+  flex: 0 0 auto;
+  width: 22%;
+}
+.contact-Product{
+  flex: 0 0 auto;
+  width: 7.6%;
+}
+.contact-ForDevelopers{
+  flex: 0 0 auto;
+  width: 12.7%;
+}
+.contact-Company{
+  flex: 0 0 auto;
+  width: 8%;
+}
+.contact-Support{
+  flex: 0 0 auto;
+  width: 9.4%;
+}
+.contact-Newsletter{
+  flex: 0 0 auto;
+  width: 18.98%;
+}
+.cur-p{
+  cursor: pointer;
+}
+
+#emailicon{
+  position: relative;
+  top: -52px;
+  left: 85%;
+}
+#Email{
+  border: none;
+  height: 40px;
+  filter: drop-shadow(0px 5px 9px rgba(0, 0, 0, 0.051))
+}
+.card input,.card button{
+  height: 50px;
+}
+.card-body{
+  position: relative;
+  box-shadow: 4px 4px 12px rgba(137, 137, 162, 0.122);
+  background-color: var(--White);
+  z-index: 3;
+}
+.cardbg{
+  position: absolute;
+  background-color: var(--PrimaryBG);
+  width: 110%;
+  height: 100%;
+  left: -5%;
+  top: 5%;
+  border-radius:10px;
+  z-index: 1;
+}
+
+p{
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+h1{
+  font-size: 5rem;
+}
+h2{
+  font-size: 3rem;
+}
+.fs-5 {
+  font-size: 1.5rem!important;
+}
+h1,h2,h3,h4,h5{
+  font-weight: 700;
+}
+.fw-500{
+  font-weight: 500;
+}
